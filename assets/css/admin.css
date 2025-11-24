@@ -1,0 +1,204 @@
+/**
+ * Estilos do plugin Belluno Transactions Manager
+ */
+
+.btm-admin-wrap {
+    margin: 20px 20px 0 0;
+}
+
+.btm-search-box {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.btm-search-box .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.btm-search-field {
+    flex: 1;
+    max-width: 500px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+}
+
+.btm-search-field:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+.btm-transactions-container {
+    margin-top: 20px;
+}
+
+.btm-transactions-table {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.btm-transactions-table thead th {
+    background: #f6f7f7;
+    font-weight: 600;
+    padding: 12px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.btm-transactions-table tbody td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.btm-transactions-table tbody tr:hover {
+    background: #f6f7f7;
+}
+
+.btm-transactions-table .no-items {
+    text-align: center;
+    padding: 40px 20px;
+    color: #646970;
+    font-style: italic;
+}
+
+.btm-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btm-status-paid {
+    background: #00a32a;
+    color: #fff;
+}
+
+.btm-status-recusado,
+.btm-status-refused {
+    background: #d63638;
+    color: #fff;
+}
+
+.btm-status-processando,
+.btm-status-processing {
+    background: #2271b1;
+    color: #fff;
+}
+
+.btm-status-análise,
+.btm-status-manual-analysis,
+.btm-status-client-manual-analysis {
+    background: #dba617;
+    color: #fff;
+}
+
+.btm-status-aberto,
+.btm-status-open,
+.btm-status-não-pago,
+.btm-status-unpaid {
+    background: #646970;
+    color: #fff;
+}
+
+.btm-card-info {
+    font-size: 13px;
+    color: #50575e;
+}
+
+.btm-card-info strong {
+    font-weight: 600;
+}
+
+.btm-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.btm-pagination .displaying-num {
+    color: #646970;
+    font-size: 13px;
+}
+
+.btm-pagination .pagination-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btm-pagination .paging-input {
+    color: #646970;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.btm-transactions-table .column-order-number a {
+    font-weight: 600;
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.btm-transactions-table .column-order-number a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+.btm-transactions-table .column-nsu strong {
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.btm-transactions-table .column-amount strong {
+    color: #00a32a;
+    font-size: 14px;
+}
+
+.btm-transactions-table .column-amount small {
+    display: block;
+    color: #646970;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 782px) {
+    .btm-search-box .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btm-search-field {
+        max-width: 100%;
+    }
+    
+    .btm-pagination {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btm-transactions-table {
+        font-size: 13px;
+    }
+    
+    .btm-transactions-table thead th,
+    .btm-transactions-table tbody td {
+        padding: 8px;
+    }
+}
+
